@@ -13,3 +13,5 @@ Adding Dungeons and Dragons type gameplay to KeeperRL
 -Monster Lairs (Main Villains)
 -New Items and Spells
 -New Keeper?
+
+-QUESTS (Michal added the ability to do them now!)
