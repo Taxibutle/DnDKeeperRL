@@ -1,0 +1,144 @@
+#####
+# Credit to 37 for following code     (I did minor changes to spelling to fit with my spell pattern, but the actual effects, etc, are from him)
+#####
+
+"charm ray"
+{
+  symbol = "?"
+  effect = Name "Charming Ray" Chain { Filter Enemy Chance 0.6 Lasting PEACEFULNESS }
+  range = 12
+  endOnly = true
+  cooldown = 6
+  sound = SPELL_BLAST
+}
+  
+  
+  
+"paralysing ray"
+{
+  symbol = "?"
+  effect = Name "Paralyzing Ray" Chain { Filter Enemy Chance 0.6 Lasting IMMOBILE }
+  range = 12
+  endOnly = true
+  cooldown = 6
+  sound = SPELL_BLAST
+}
+  
+  
+  
+"fear ray"
+{
+  symbol = "?"
+  effect = Name "Madness Ray" Chain { Filter Enemy Chance 0.6 Lasting INSANITY }
+  range = 12
+  endOnly = true
+  cooldown = 6
+  sound = SPELL_BLAST
+}
+  
+  
+  
+  
+"slowing ray"
+{
+  symbol = "?"
+  effect = Name "Slowing Ray" Chain { Filter Enemy Chance 0.6 Lasting SLOWED }
+  range = 12
+  endOnly = true
+  cooldown = 6
+  sound = SPELL_BLAST
+}
+  
+  
+ 
+  
+"enervation ray"
+{
+  symbol = "?"
+  effect = Name "Enervating Ray" Chain { Filter Enemy Chance 0.6 Lasting BLEEDING }
+  range = 12
+  endOnly = true
+  cooldown = 6
+  sound = SPELL_BLAST
+}
+  
+  
+  
+"telekinetic ray"
+{
+  symbol = "??"
+  effect = Name "Telekinetic Animation Ray" AnimateItems 5 5 {60 80}
+  range = 12
+  endOnly = true
+  cooldown = 6
+  sound = SPELL_BLAST
+}
+ 
+"sleep ray"
+{
+  symbol = "?-"
+  effect = Name "Sleeping Ray" Chain { Filter Enemy Chance 0.6 Lasting SLEEP }
+  range = 12
+  endOnly = true
+  cooldown = 6
+  sound = SPELL_BLAST
+}
+
+  
+"petrification ray"
+{
+  symbol = "?"
+  effect = Name "Petrifying Ray" Chain { Filter Enemy Chance 0.6 Chain {Lasting TIED_UP  Lasting BLIND  Lasting STUNNED }}
+  range = 12
+  endOnly = true
+  cooldown = 6
+  sound = SPELL_BLAST
+}
+
+
+"disintegration ray"
+{
+  symbol = "?"
+  effect = Name "Disintegration Ray" Damage SPELL_DAMAGE SPELL
+  fx = FLAMETHROWER
+  range = 4
+  endOnly = true
+  cooldown = 6
+  sound = SPELL_BLAST
+}
+
+
+"death ray"
+{
+  symbol = "?"
+  effect = Name "Death Ray" Chain{ Filter Enemy Chance 0.4 Chain { Damage SPELL_DAMAGE SPELL Permanent COLLAPSED } Filter Enemy Chance 0.7 Chain { Permanent BLIND Lasting SLOWED Lasting BLEEDING } }
+  range = 5
+  endOnly = true
+  cooldown = 18
+  sound = SPELL_BLAST
+}
+
+###
+# End 37's Spells
+###
+
+"wounding ray"
+{
+  symbol = "?"
+  effect = Name "Wounding Ray" Damage SPELL_DAMAGE SPELL
+  fx = FLAMETHROWER
+  range = 3
+  endOnly = true
+  cooldown = 6
+  sound = SPELL_BLAST
+}
+
+"confusion ray"
+{
+  symbol = "?"
+  effect = Name "Confusion Ray" Chain { Filter Enemy Chance 0.7 Chain { Lasting INSANITY Lasting HALLU }}
+  range = 12
+  endOnly = true
+  cooldown = 6
+  sound = SPELL_BLAST
+}

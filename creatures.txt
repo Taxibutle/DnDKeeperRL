@@ -1,0 +1,105 @@
+"BEHOLDER"
+  {
+    viewId = { "beholder_standard" }
+    attr = {
+	  DAMAGE 30
+      DEFENSE 64
+	  SPELL_DAMAGE 50
+    }
+    body = {
+      type = NonHumanoid HUGE
+      bodyParts = {
+        BACK 1
+        HEAD 11
+        TORSO 1
+      }
+      material = SPIRIT
+      drops = {
+        { Simple "BeholderStalks" } 1
+      }
+	  intrinsicAttacks = {
+          TORSO {{{ Intrinsic { "bite_attack" } "fangs" 7 {
+              attackType = BITE
+              attackMsg = BITE
+              victimEffect = {0.6 Lasting BLEEDING } } }
+        }}}
+    }
+    spells = {
+      "charm ray"
+	  "paralysing ray"
+	  "fear ray"
+	  "slowing ray"
+	  "enervation ray"
+	  "telekinetic ray"
+	  "sleep ray"
+	  "petrification ray"
+	  "disintegration ray"
+	  "death ray"
+    }
+    permanentEffects = {
+      MAGIC_RESISTANCE 1
+      SLEEP_RESISTANT 1
+      FIRE_RESISTANT 1
+      FLYING 1
+	  SPEED 1
+	  NIGHT_VISION 1
+    }
+    name = {
+      name = "Beholder"
+      pluralName = "beholders"
+      fullTitle = true
+	  firstNameGen = "DRAGON"
+    }
+    chatReactionFriendly = "\"Let me gaze upon you, and PERISH!\""
+    chatReactionHostile = "\"Let me gaze upon you, and PERISH!\""
+    deathDescription = "vanquished. May he not dream"
+    gender = IT
+  }
+  
+"BEHOLDER_SPECTATOR"
+  {
+    viewId = { "beholder_spectator" }
+    attr = {
+	  DAMAGE 20
+      DEFENSE 48
+	  SPELL_DAMAGE 40
+    }
+    body = {
+      type = NonHumanoid HUGE
+      bodyParts = {
+        BACK 1
+        HEAD 5
+        TORSO 1
+      }
+      material = SPIRIT
+	  intrinsicAttacks = {
+          TORSO {{{ Intrinsic { "bite_attack" } "fangs" 6 {
+              attackType = BITE
+              attackMsg = BITE
+              victimEffect = {0.6 Lasting BLEEDING } } }
+        }}}
+    }
+    spells = {
+	  "confusion ray"
+	  "paralysing ray"
+	  "fear ray"
+	  "wounding ray"
+    }
+    permanentEffects = {
+      MAGIC_RESISTANCE 1
+      SLEEP_RESISTANT 1
+      FIRE_RESISTANT 1
+      FLYING 1
+	  SPEED 1
+	  NIGHT_VISION 1
+    }
+    name = {
+      name = "Spectator"
+      pluralName = "spectators"
+      fullTitle = true
+	  firstNameGen = "DRAGON"
+    }
+    chatReactionFriendly = "\"I shall fight for my master!\""
+    chatReactionHostile = "\"Let me gaze upon you, and PERISH!\""
+    gender = IT
+  }

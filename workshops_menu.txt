@@ -1,0 +1,8 @@
+"basic" modify append
+{
+"LABORATORY"
+  {
+	  {item = {Potion Summon "BEHOLDER_SPECTATOR" { 1 } none} work = 20 cost = "GOLD" 120 requireIngredient = "beholder_stalks" }
+  }
+  
+}

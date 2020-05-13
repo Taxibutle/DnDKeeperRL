@@ -1,0 +1,10 @@
+"BeholderStalks"
+    {
+      viewId = { "beholderstalks" }
+      shortName = "eyes"
+      name = "Beholder Eye Stalks"
+      itemClass = OTHER
+      weight = 20
+      price = 400
+      ingredientType = "beholder_stalks"
+    }
