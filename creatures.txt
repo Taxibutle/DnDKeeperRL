@@ -1,4 +1,4 @@
-"BEHOLDER"
+"BEHOLDER_STANDARD"
   {
     viewId = { "beholder_standard" }
     attr = {
@@ -35,6 +35,7 @@
 	  "petrification ray"
 	  "disintegration ray"
 	  "death ray"
+	  "beholder magic cancellation"
     }
     permanentEffects = {
       MAGIC_RESISTANCE 1
@@ -84,6 +85,7 @@
 	  "paralysing ray"
 	  "fear ray"
 	  "wounding ray"
+	  "beholder magic cancellation"
     }
     permanentEffects = {
       MAGIC_RESISTANCE 1
@@ -102,4 +104,124 @@
     chatReactionFriendly = "\"I shall fight for my master!\""
     chatReactionHostile = "\"Let me gaze upon you, and PERISH!\""
     gender = IT
+<<<<<<< Updated upstream
   }
+=======
+  }
+  
+  
+"LICH"
+    {
+      viewId = { "lich" }
+      attr = {
+        DAMAGE 34
+        DEFENSE 54
+        SPELL_DAMAGE 48
+		RANGED_DAMAGE 20
+      }
+      body = {
+        type = Humanoid LARGE
+        material = UNDEAD_FLESH
+      }
+      chatReactionFriendly = "\"All living shall be cursed!\""
+      chatReactionHostile = "\"Die, mortal!\""
+      permanentEffects = {
+        NIGHT_VISION 1
+        RANGED_RESISTANCE 1
+		SLEEP_RESISTANT 1
+		DARKNESS_SOURCE 1
+      }
+      spellSchools = { "illusion" "mage" "healer" }
+	  spells = {
+	    "poison gas"
+		"frightening gaze"
+		"disrupt life"
+		"Mage Hand"
+		"ray of frost"
+		"ThunderWave"
+		"Shield"
+		"Detect thoughts"
+		"invisibility 2nd st level"
+		"acid arrow"
+		"animate dead"
+		"dispel magic"
+		"counterspell"
+		"blight"
+		"dimension door"
+		"disintegrate_spell"
+		"circle of death"
+		"finger of death"
+		"dominate monster"
+		"paralysing_touch"
+	  }
+      name = {
+        name = "lich"
+        firstNameGen = "VAMPIRE"
+      }
+      hatedByEffect = HATE_UNDEAD
+	  inventory = {
+		{ type = Simple "GoldenStaff" prefixChance = 1 }
+		{ type = Simple "AdaArmor" prefixChance = 1 }
+		{ type = Simple "AdaHelm" prefixChance = 1 }
+		{ type = Simple "IronBoots" prefixChance = 1 }
+		{ type = Simple "AdaGloves" prefixChance = 1 }
+		{ Simple "DefenseAmulet" }
+      }
+	  deathDescription = "destroyed, the phylactery will revive him given time, however."
+    }
+	
+"LICHLESSER"
+    {
+      viewId = { "lich" }
+      attr = {
+        DAMAGE 30
+        DEFENSE 44
+        SPELL_DAMAGE 40
+		RANGED_DAMAGE 15
+      }
+      body = {
+        type = Humanoid LARGE
+        material = UNDEAD_FLESH
+      }
+      chatReactionFriendly = "\"All living shall be cursed!\""
+      chatReactionHostile = "\"Die, mortal!\""
+      permanentEffects = {
+        NIGHT_VISION 1
+        RANGED_RESISTANCE 1
+		SLEEP_RESISTANT 1
+      }
+      maxLevelIncrease = {
+        MELEE 7
+        SPELL 4
+      }
+      spellSchools = { "illusion" "mage" "healer" }
+	  spells = {
+	    "poison gas"
+		"frightening gaze"
+		"disrupt life"
+		"Mage Hand"
+		"ray of frost"
+		"ThunderWave"
+		"Shield"
+		"Detect thoughts"
+		"invisibility 2nd st level"
+		"acid arrow"
+		"animate dead"
+		"dispel magic"
+		"counterspell"
+		"blight"
+		"dimension door"
+		"disintegrate_spell"
+		"circle of death"
+		"finger of death"
+		"dominate monster"
+		"paralysing_touch"
+	  }
+      name = {
+        name = "lich"
+        firstNameGen = "VAMPIRE"
+      }
+	  deathEffect = SetFlag "lich_summoned" false
+      hatedByEffect = HATE_UNDEAD
+    }
+>>>>>>> Stashed changes

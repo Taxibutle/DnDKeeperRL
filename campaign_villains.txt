@@ -1,0 +1,19 @@
+EVIL_KEEPER modify append {
+	{{ "unknown_monster" ColorId RED } "BEHOLDER" "Unknown" MAIN}
+	{{ "unknown_monster" ColorId RED } "LICHCASTLE" "Unknown" MAIN}
+}
+
+LAWFUL_KEEPER modify append {
+	{{ "unknown_monster" ColorId RED } "BEHOLDER" "Unknown" MAIN}
+	{{ "unknown_monster" ColorId RED } "LICHCASTLE" "Unknown" MAIN}
+}
+
+EVIL_ADVENTURER modify append {
+	{{ "unknown_monster" ColorId RED } "BEHOLDER" "Unknown" MAIN}
+	{{ "unknown_monster" ColorId RED } "LICHCASTLE" "Unknown" MAIN}
+}
+
+LAWFUL_ADVENTURER modify append {
+	{{ "unknown_monster" ColorId RED } "BEHOLDER" "Unknown" MAIN}
+	{{ "unknown_monster" ColorId RED } "LICHCASTLE" "Unknown" MAIN}
+}

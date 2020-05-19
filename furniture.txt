@@ -1,0 +1,79 @@
+"PHYLACTERY"
+{
+  name = "Lich Phylactery"
+  viewId = { "coffin3" }
+  blockMovement = true
+  luxury = 0.7
+  strength = 180
+  fire = 300
+  destroyFX = { DESTROY_FURNITURE Rgb 190 190 40 255 }
+  destroyedEffect = Chain { Message "The orb explodes!" Area 4 Fire DropItems {Simple "LichSecrets"} { 1 }  DropItems {Simple "PhyPiece"} { 1 } }
+}
+
+"PHYLACTERY_PLAYER"
+{
+  name = "Lich Phylactery"
+  viewId = { "coffin3" }
+  blockMovement = true
+  luxury = 0.7
+  strength = 180
+  tickType = Effect Filter Not Flag "lich_summoned" Chance 0.005 Chain { SummonEnemy "LICHLESSER" { 1 } none SetFlag "lich_summoned" true }
+  fire = 300
+  destroyFX = { DESTROY_FURNITURE Rgb 190 190 40 255 }
+  destroyedEffect = Chain { Message "The orb explodes!" Area 3 Fire }
+}
+
+"SPAWNER_COFFIN1_LD"
+{
+  name = "fine coffin"
+  viewId = { "coffin2" }
+  blockMovement = true
+  tickType = Effect Chance 0.009 SummonEnemy "SKELETON" { 1 2 } none
+  luxury = 0.3
+  fire = 50
+  strength = 100
+  destroyFX = { DESTROY_FURNITURE Rgb 120 120 120 255 }
+}
+
+"SPAWNER_COFFIN2_LD"
+{
+  name = "fine coffin"
+  viewId = { "coffin2" }
+  blockMovement = true
+  tickType = Effect Chance 0.012 SummonEnemy "ZOMBIE" { 1 2 } none
+  luxury = 0.3
+  fire = 50
+  strength = 100
+  destroyFX = { DESTROY_FURNITURE Rgb 120 120 120 255 }
+}
+
+"SPAWNER_COFFIN3_LD"
+{
+  name = "luxurious coffin"
+  viewId = { "coffin3" }
+  blockMovement = true
+  tickType = Effect Chance 0.007 SummonEnemy "VAMPIRE_LORD" { 1 2 } none
+  luxury = 0.3
+  fire = 50
+  strength = 100
+  destroyFX = { DESTROY_FURNITURE Rgb 120 120 120 255 }
+}
+
+"LOOT_COFFIN2_LD"
+{
+  name = "fine coffin"
+  viewId = { "coffin2" }
+  canHideHere = true
+  usageType = BuiltinUsageId COFFIN
+  fire = 50
+  strength = 40
+  destroyFX = { DESTROY_FURNITURE Rgb 120 87 46 255 }
+}
+
+"POISONGAS_LD"
+{
+  name = "poison cloud"
+  viewId = { "poisongas_ld" }
+  layer = CEILING
+  tickType = Effect Chance 0.5 EmitPoisonGas 0.8
+}

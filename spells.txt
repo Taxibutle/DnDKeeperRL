@@ -118,6 +118,235 @@
   sound = SPELL_BLAST
 }
 
+
+## Second Batch Lich Spells from 37
+
+  #cantrips
+ 
+
+ "Mage Hand"
+{
+  symbol = "⚔️"
+  effect = Name "Mage Hand" AnimateItems 3 3 {30 50}
+  range = 2
+  endOnly = true
+  cooldown = 2
+  sound = SPELL_BLAST
+}
+  
+  
+  "ray of frost"
+{
+  symbol = "❄"
+  effect = Name "ray of frost" Ice
+  fx = ICE
+  range = 4
+  cooldown = 2
+  #sound = SPELL_FIRE_SPHERE_PET
+}
+  
+  
+  
+  #1st level
+  
+    "ThunderWave"
+{
+    #upgrade = "Energy_blot"
+    symbol = "☼"
+	effect = Name "ThunderWave"Area 8 Filter Enemy Chain { Damage RANGED_DAMAGE SPELL Chance 0.6 Damage RANGED_DAMAGE SPELL }
+    targetSelf = true
+	cooldown = 15
+    sound = SPELL_BLAST
+}
+  
+  
+  
+"Shield"
+{
+  symbol = "🛡"
+  effect = Name "Shield" Lasting DEF_BONUS
+  cooldown = 15
+  sound = SPELL_DEX_BONUS
+}
+  
+  
+  
+  
+  #2md level
+  
+  "Detect thoughts"
+{
+  symbol = "🕵️"
+  effect = Lasting TELEPATHY
+  cooldown = 30
+  sound = SPELL_INVISIBILITY
+}
+
+
+ "invisibility 2nd st level"
+{
+  symbol = "🕵️"
+  effect = Lasting INVISIBLE
+  cooldown = 30
+  sound = SPELL_INVISIBILITY
+}
+  
+  
+    "acid arrow"
+{
+  symbol = "🜅"
+  effect = Name "acid arrow" Acid
+  fx = ACID
+  range = 6
+  cooldown = 30
+}
+
+#3rd level
+  
+  
+  "animate dead"
+{
+  symbol = "👾"
+  effect = Name "animate dead" Summon "SKELETON" { 1 2 } 100
+  cooldown = 45
+  sound = SPELL_FIRE_SPHERE_PET
+}
+  
+  
+"dispel magic"
+{
+  symbol = "??"
+  effect = Name "Dispel Magic" Area 3 Filter Enemy Lasting MAGIC_CANCELLATION
+  cooldown = 45
+  range = 5
+}
+  
+  
+   "counterspell"
+{
+  symbol = "x"
+  effect = Lasting MAGIC_RESISTANCE
+  cooldown = 45
+  sound = SPELL_INVISIBILITY
+}
+  
+#4th level
+
+ "blight"
+ {
+  symbol = "x"
+  effect = Name "blight" Filter And { Not BodyMaterial SPIRIT Not BodyMaterial UNDEAD_FLESH } Chain { Damage RANGED_DAMAGE SPELL Chance 0.6 Damage SPELL_DAMAGE SPELL }
+  endOnly = true
+  range = 6
+  cooldown = 60
+  sound = SPELL_INVISIBILITY
+}
+
+"dimension door"
+{
+  upgrade = "teleport"
+  symbol = "🌀"
+  effect = Name "dimension door" Teleport
+  range = 12
+  cooldown = 60
+  endOnly = true
+  sound = SPELL_TELEPORT
+}
+
+
+
+#5th level
+
+
+#6th level
+
+  "disintegrate_spell"
+{
+  symbol = "⥇"
+  effect = Name "Disintegration ray" Chain { Damage SPELL_DAMAGE SPELL Chance 0.9 Damage SPELL_DAMAGE SPELL }  
+  fx = FLAMETHROWER
+  range = 4
+  endOnly = true
+  cooldown = 75
+  sound = SPELL_BLAST
+}
+
+
+#globe of invulnerability
+
+  "circle of death"
+{ 
+  symbol = "e"
+  effect = Name "Circle of Death" Area 12 Filter BodyMaterial FLESH Chain { Damage SPELL_DAMAGE SPELL Chance 0.8 Damage SPELL_DAMAGE SPELL }
+  range = 12
+  endOnly = true
+  cooldown = 90
+  sound = SPELL_BLAST
+}
+
+
+
+
+#7th
+
+
+"finger of death"
+{
+  symbol = "⥇"
+  effect = Name "finger of death"  Chain { Damage SPELL_DAMAGE SPELL Chance 0.8 Damage SPELL_DAMAGE SPELL }
+  range = 4
+  endOnly = true
+  cooldown = 105
+  sound = SPELL_BLAST
+}
+
+
+#8th
+
+ "dominate monster"
+{
+  symbol = "?"
+  effect = Name "dominate monster" Chain { Filter Enemy Chance 0.8 Lasting PEACEFULNESS }
+  range = 12
+  endOnly = true
+  cooldown = 120
+  sound = SPELL_BLAST
+  }
+  
+  
+##powerwordkill
+
+
+
+
+
+
+#"powerwordkill"
+#{
+#  symbol = "♪"
+#  effect = Name "Power Word Kill" Filter LastingEffect  WOUNDED Victim Suicide
+#  range = 4
+# cooldown = 2400
+#  sound = SPELL_BLAST
+#}
+
+
+####paralyzing touch
+
+
+ "paralysing_touch"
+  {
+  symbol = "Ç"
+  effect = Name "paralysing touch"  Chain { Damage RANGED_DAMAGE SPELL Chance 0.8 Lasting TIED_UP }
+  range = 1
+  cooldown = 0
+  sound = SPELL_BLAST
+  }
+
+
+
+
+
 ###
 # End 37's Spells
 ###
@@ -140,5 +369,40 @@
   range = 12
   endOnly = true
   cooldown = 6
+  sound = SPELL_BLAST
+}
+  
+"beholder magic cancellation"
+{
+  symbol = "??"
+  effect = Name "Beholder Magic Cancellation" Area 10 Filter Enemy Lasting MAGIC_CANCELLATION
+  cooldown = 1
+}
+
+"poison gas"
+{
+  symbol = "𝍔"
+  effect =  Name "Poison Gas" CustomArea PlaceFurniture "POISONGAS_LD" { 1 0 1 2 1 -2 }
+  endOnly = true
+  range = 2
+  cooldown = 40
+  sound = SPELL_BLAST
+}
+
+"frightening gaze"
+{
+  symbol = "𝍔"
+  effect =  Name "Frightening Gaze" Filter Enemy Chain { Lasting PANIC Lasting HALLU }
+  endOnly = true
+  range = 5
+  cooldown = 40
+  sound = SPELL_BLAST
+}
+
+"disrupt life"
+{
+  symbol = "𝍔"
+  effect = Name "Disrupt Life" Area 4 Filter And { BodyMaterial FLESH Enemy } Chain { Damage SPELL_DAMAGE SPELL Chance 0.8 Damage SPELL_DAMAGE SPELL }
+  cooldown = 100
   sound = SPELL_BLAST
 }

@@ -1,0 +1,30 @@
+"cryptInside_LD"
+{
+  {
+    "COFFIN3" 2
+    "CHEST" 6
+	"SPAWNER_COFFIN3_LD" 1
+  }
+}
+
+"cryptInside_LD_PHY"
+{
+  {
+    "COFFIN3" 2
+    "CHEST" 6
+	"SPAWNER_COFFIN3_LD" 1
+  }
+  {
+   "PHYLACTERY"
+  }
+}
+
+"cryptOutside_LD"
+{
+  {
+    "COFFIN2" 1
+    "LOOT_COFFIN2_LD" 2
+	"SPAWNER_COFFIN1_LD" 1
+	"SPAWNER_COFFIN2_LD" 1
+  }
+}

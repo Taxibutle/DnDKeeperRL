@@ -1,8 +1,19 @@
+<<<<<<< Updated upstream
 "basic" modify append
 {
+=======
+"basic" modify append {
+
+"FORGE"
+  {
+	  {item = {Simple "PhylacteryUnplaced"} work = 20 cost = "PHYPIECE" 1 requireIngredient = "secret_book" }
+  }
+  
+>>>>>>> Stashed changes
 "LABORATORY"
   {
 	  {item = {Potion Summon "BEHOLDER_SPECTATOR" { 1 } none} work = 20 cost = "GOLD" 120 requireIngredient = "beholder_stalks" }
   }
   
 }
+

@@ -1,3 +1,5 @@
   { "beholder_standard" "B" ColorId RED }
   { "beholderstalks" "s" ColorId YELLOW }
   { "beholder_spectator" "S" ColorId YELLOW }
+  { "lich" "L" ColorId RED }
+  { "poisongas_ld" "P" ColorId PURPLE }

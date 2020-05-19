@@ -1,0 +1,95 @@
+"LICHCASTLE"
+  {
+    settlement = {
+      type = Builtin CASTLE2
+      tribe = MONSTER
+      inhabitants = {
+        fighters = {
+          count = {15 22}
+          all = { 5 "SKELETON" 1 "VAMPIRE" 1 "MUMMY" 1 "VAMPIRE_LORD" }
+        }
+        leader = { { "LICH" } }
+      }
+      race = "undead"
+      buildingId = "DUNGEON"
+      stockpiles = {{ "minerals" 700}}
+	  shopItems = { "villageShop" }
+      outsideFeatures = "cryptOutside_LD"
+      furniture = { "cryptInside_LD_PHY" }
+      surroundWithResources = 10  
+    }
+	config = {
+      immigrantInterval = 100
+      maxPopulation = 32
+      ghostProb = 0.1
+      spawnGhosts = 6
+    }
+    behaviour = {
+      minPopulation = 5
+      minTeamSize = 4
+      triggers = { SelfVictims StolenItems }
+      attackBehaviour = KillLeader
+    }
+	immigrants = {
+      {
+        ids = {"SKELETON"}
+        traits = {FIGHTER}
+		specialTraits = {
+			{1.0 {AttrBonus DAMAGE 4 Lasting {NIGHT_VISION} }}
+		}
+        frequency = 0.4
+		spawnLocation = InsideTerritory
+      }
+	  {
+        ids = {"ZOMBIE"}
+        traits = {FIGHTER}
+		specialTraits = {
+			{1.0 {AttrBonus DAMAGE 4 Lasting {NIGHT_VISION} }}
+		}
+        frequency = 0.4
+		spawnLocation = InsideTerritory
+      }
+	  {
+        ids = {"VAMPIRE"}
+        traits = {FIGHTER}
+		specialTraits = {
+			{1.0 {AttrBonus DAMAGE 4 Lasting {NIGHT_VISION} }}
+		}
+        frequency = 0.2
+		spawnLocation = InsideTerritory
+      }
+    }
+  }
+  
+  "BEHOLDER"
+  {
+    settlement = {
+      type = Builtin CASTLE
+      tribe = MONSTER
+      inhabitants = {
+        leader = { { "BEHOLDER_STANDARD" } }
+      }
+      locationNameGen = "TOWN"
+      race = "beholders"
+      buildingId = "BRICK"
+      stockpiles = {{ "gold" 622 "TREASURE_CHEST" }}
+	  shopItems = { "dungeon" }
+      lootItem = {TechBook "master sorcery"}
+      furniture = { "castleFurniture" }
+      outsideFeatures = "castleOutside"
+    }
+    behaviour = {
+      minPopulation = 1
+      minTeamSize = 1
+      triggers = {
+        RoomTrigger "THRONE" 0.0003
+        SelfVictims
+        NumConquered 3
+        StolenItems
+        FinishOff
+        Proximity
+      }
+      attackBehaviour = KillLeader
+      ransom = 0.8 140
+    }
+  }

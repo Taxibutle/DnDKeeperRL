@@ -1,0 +1,2 @@
+"lich_ld"
+{ "LICH" } EVIL "Spread your evil influence and conquer your enemies!"
