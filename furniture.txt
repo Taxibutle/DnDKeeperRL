@@ -75,5 +75,5 @@
   name = "poison cloud"
   viewId = { "poisongas_ld" }
   layer = CEILING
-  tickType = Effect Chance 0.5 EmitPoisonGas 0.8
+  tickType = Effect Chance 0.5 Chain { EmitPoisonGas 0.8 DestroyWalls BASH }
 }

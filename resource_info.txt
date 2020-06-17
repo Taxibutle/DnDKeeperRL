@@ -1,0 +1,2 @@
+"PHYPIECE"			  { RESOURCE    "part of a phylactery" }
+"PHYLACTERY_UNPLACED" { RESOURCE    "an unplaced phylactery" }

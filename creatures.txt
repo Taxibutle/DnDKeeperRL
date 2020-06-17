@@ -104,9 +104,6 @@
     chatReactionFriendly = "\"I shall fight for my master!\""
     chatReactionHostile = "\"Let me gaze upon you, and PERISH!\""
     gender = IT
-<<<<<<< Updated upstream
-  }
-=======
   }
   
   
@@ -224,4 +221,3 @@
 	  deathEffect = SetFlag "lich_summoned" false
       hatedByEffect = HATE_UNDEAD
     }
->>>>>>> Stashed changes

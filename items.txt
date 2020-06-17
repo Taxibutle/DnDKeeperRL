@@ -8,3 +8,33 @@
       price = 400
       ingredientType = "beholder_stalks"
     }
+"LichSecrets"
+    {
+      viewId = { "book" }
+      shortName = "book"
+      name = "A Lich's Book of Secrets"
+      itemClass = OTHER
+      weight = 20
+      price = 600
+      ingredientType = "secret_book"
+    }
+"PhyPiece"
+    {
+      viewId = { "dragon_scales" Rgb 0 16 165 255 }
+      shortName = "book"
+      name = "piece of a phylactery"
+      itemClass = OTHER
+      weight = 20
+      price = 400
+      resourceId = "PHYPIECE"
+    }
+"PhylacteryUnplaced"
+    {
+      viewId = { "wooden_shield" Rgb 58 71 142 255 }
+      shortName = "book"
+      name = "an unplaced phylactery"
+      itemClass = OTHER
+      weight = 20
+      price = 1000
+      resourceId = "PHYLACTERY_UNPLACED"
+    }
