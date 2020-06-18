@@ -221,3 +221,45 @@
 	  deathEffect = SetFlag "lich_summoned" false
       hatedByEffect = HATE_UNDEAD
     }
+	
+	"ABOLETH_DNDK"
+  {
+    viewId = { "aboleth_dndk" }
+    attr = {
+	  DAMAGE 30
+      DEFENSE 56
+	  SPELL_DAMAGE 40
+    }
+    body = {
+      type = NonHumanoid HUGE
+      bodyParts = {
+        BACK 1
+        TORSO 1
+		LEG 3
+      }
+	  intrinsicAttacks = {
+	    LEG  {{itemType = { Intrinsic { "claws_attack" } "tentacle" 8 { attackType = HIT attackMsg = CLAW } } }}
+        BACK  {{itemType = { Intrinsic { "claws_attack" } "tentacle" 8 { attackType = HIT attackMsg = CLAW } } isExtraAttack = true }}
+		TORSO  {{itemType = { Intrinsic { "claws_attack" } "tentacle" 8 { attackType = HIT attackMsg = CLAW } } isExtraAttack = true }}
+      }
+    }
+    spells = {
+	  "detect"
+	  "enslave"
+	  "psychic drain"
+	  "tail swipe"
+    }
+    permanentEffects = {
+      SWIMMING_SKILL 1
+	  NIGHT_VISION 1
+    }
+    name = {
+      name = "Aboleth"
+      pluralName = "Aboleths"
+      fullTitle = true
+	  firstNameGen = "DRAGON"
+    }
+    chatReactionFriendly = "\"Rarghhhh!\""
+    chatReactionHostile = "\"Rarghhhh!\""
+    gender = IT
+  }

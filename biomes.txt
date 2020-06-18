@@ -1,0 +1,17 @@
+"GRASSLAND" modify append {
+  darkKeeperBaseEnemies = {
+	{ id = "ABOLETH_CAVE_DNDK" probability = 0.4 }
+  }
+  whiteKeeperBaseEnemies = {
+	{ id = "ABOLETH_CAVE_DNDK" probability = 0.4 }
+  }
+}
+
+"FOREST" modify append {
+  darkKeeperBaseEnemies = {
+    { id = "ABOLETH_CAVE_DNDK" probability = 0.4 }
+  }
+  whiteKeeperBaseEnemies = {
+    { id = "ABOLETH_CAVE_DNDK" probability = 0.4 }
+  }
+}

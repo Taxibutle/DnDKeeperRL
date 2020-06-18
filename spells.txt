@@ -406,3 +406,34 @@
   cooldown = 100
   sound = SPELL_BLAST
 }
+
+"enslave"
+{
+  symbol = "🕸"
+  effect = Name "Enslave" Chance 0.7 Chain { Lasting INSANITY Lasting HALLU }
+  cooldown = 300
+  sound = SPELL_BLAST
+}
+
+"detect"
+{
+  symbol = "📡"
+  effect = Name "Detect" Chance 0.9 Lasting TELEPATHY
+  cooldown = 40
+  sound = SPELL_BLAST
+}
+
+"psychic drain"
+{
+  symbol = "🕸"
+  effect = Name "Psychic Drain" Chance 0.7 Chain { Lasting INSANITY Lasting HALLU Damage SPELL_DAMAGE SPELL }
+  cooldown = 400
+  sound = SPELL_BLAST
+}
+
+"tail swipe"
+{
+  symbol = "/"
+  effect = Name "Tail Swipe" Chain { Damage SPELL_DAMAGE SPELL Damage SPELL_DAMAGE SPELL }
+  cooldown = 500
+}

@@ -93,3 +93,27 @@
       ransom = 0.8 140
     }
   }
+  
+  "ABOLETH_CAVE_DNDK"
+{
+  settlement = {
+    type = MapLayout { "aboleth_cave_dndk" }
+	dontConnectCave = true
+    inhabitants = {
+      leader = { { "ABOLETH_DNDK" } }
+    }
+    tribe = MONSTER
+    race = "aboleths"
+    buildingId = "DUNGEON"
+  }
+  behaviour = {
+  minPopulation = 1
+  minTeamSize = 1
+    triggers = {
+        NumConquered 2
+        FinishOff
+        Proximity
+      }
+	  attackBehaviour = KillLeader
+}
+}

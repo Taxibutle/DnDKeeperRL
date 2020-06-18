@@ -3,3 +3,4 @@
   { "beholder_spectator" "S" ColorId YELLOW }
   { "lich" "L" ColorId RED }
   { "poisongas_ld" "P" ColorId PURPLE }
+  { "aboleth_dndk" "A" ColorId YELLOW }
