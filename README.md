@@ -5,6 +5,7 @@ Adding Dungeons and Dragons type gameplay to KeeperRL
 
 -Beholder (Standard and Spectator)
 -Beholder Related Drops
+-Aboleth (Credit Archdiggle)
 
 # Planned Additions
 
